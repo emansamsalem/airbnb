@@ -1,6 +1,17 @@
 from django.shortcuts import render
+from .models import Property
+from django.views.generic import ListView, DetailView
 
-# Create your views here.
+
+
+class PropertyList(ListView):
+    model = Property
+
+
+
+
+class PropertyDetail(DetailView):
+    model = Property
 
 
 
